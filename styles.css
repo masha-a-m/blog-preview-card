@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Figtree-Medium;
+    src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+}
+@font-face {
+    font-family: Figtree-Bold;
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: #F4D04E;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-content {
+    padding: 20px 30px;
+    border: 1px solid black;
+    max-width: 29%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.9) 5px 5px;
+}
+
+.main-img img {
+    border-radius: 10px;
+}
+.main-content button {
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #F4D04E;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Figtree-Bold';
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main-content p {
+    margin-top: 20px;
+    font-family: 'Figtree-Medium';
+    font-size: 16px;
+    color: #111111;
+}
+
+.main-content h4 {
+    margin-top: 20px;
+    font-family: 'Figtree-Bold';
+    font-size: 24px;
+    color: #111111;
+    cursor: pointer;
+}
+
+.main-content h4:hover {
+    color: #F4D04E;
+}
+
+.main-content .para {
+    color: #686868;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.author {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.author p {
+    margin-left: 20px;
+    font-family: 'Figtree-Bold';
+    font-size: 16px;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.attribution a {
+    color: rgb(16, 83, 25);
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width:425px) {
+
+    .attribution {
+        display: none;
+    }
+    
+    .main-content {
+        max-width: 80%;
+        margin-top: 10px;
+        padding: 0px 0px;
+    } 
+}
+
+@media screen and (max-width:768px) {
+    .attribution {
+        display: none;
+    }
+
+    .main-img img {
+        width:100%;
+        padding: 20px 5px;
+        text-align: center;
+    }
+
+    .main-content {
+        max-width: 80%;
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .main-img img {
+        width: 100%;
+    }
+
+    .attribution{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .main-img img {
+        width: 100%;
+    }
+}
